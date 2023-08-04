@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Not Found</title>
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/shop.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item"><a href="/">Shop</a></li>
+                <li class="main-header__item"><a href="/admin/add-product">Add Product</a></li>
+                <li class="main-header__item"><a class="active" href="/contact-us">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form class="product-form" action="/success/message" method="POST">
+        <div class="form-control">
+            <label for="user-name">Name:</label>
+            <input type="text" name="user-name" id="user-name">
+            <br>
+            <label for="user-email">Email:</label>
+            <input type="email" name="user-email" id="user-email">
+        </div>
+
+        <button type="submit">Contact</button>
+    </form>
+</body>
+
+</html>
