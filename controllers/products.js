@@ -1,4 +1,4 @@
-
+const Product = require ('../models/product.js')
 const path = require('path');
 
 exports.getAddProduct = (req,res,next)=>{
@@ -6,6 +6,7 @@ exports.getAddProduct = (req,res,next)=>{
 };
 
 exports.getPostProduct =(req,res,next)=>{
-    console.log(req.body);
+    const Product = new Product(req.body.title)
+    console.log(Product);
     res.redirect('/admin/add-product');
-}
+};
